@@ -1,0 +1,4 @@
+(executable
+  (name part1)
+  (public_name aoc_2025_02_1)
+  (libraries aoc_utils str))

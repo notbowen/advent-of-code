@@ -2,3 +2,8 @@
   (name part1)
   (public_name aoc_2025_03_1)
   (libraries aoc_utils))
+
+(executable
+  (name part2)
+  (public_name aoc_2025_03_2)
+  (libraries aoc_utils))

@@ -2,7 +2,6 @@ open Aoc_utils.Utils
 
 let input = read_lines "./2025/day03/input.txt"
 (* let input = read_lines "./2025/day03/example.txt" *)
-let explode j = List.init (String.length j) (String.get j)
 let int_of_raw_char c = int_of_char c - int_of_char '0'
 
 let rec pow b e =
@@ -14,8 +13,7 @@ let rec pow b e =
   else b * pow b (e - 1)
 
 let rec int_of_stack s acc i =
-  if Stack.is_empty s then
-    acc
+  if Stack.is_empty s then acc
   else
     let top_char = Stack.pop s in
     let top_int = int_of_raw_char top_char in

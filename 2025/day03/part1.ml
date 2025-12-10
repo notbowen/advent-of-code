@@ -1,7 +1,6 @@
 open Aoc_utils.Utils
 
 let input = read_lines "./2025/day03/input.txt"
-let explode l = List.init (String.length l) (String.get l)
 let rint_of_char c = int_of_char c - 48
 let lint_of_lchar l = List.map rint_of_char l
 
